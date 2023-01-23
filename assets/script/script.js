@@ -28,8 +28,6 @@ inquirer
         name: 'username',
       },
   ])
-
-  
   .then((response) => {
     console.log(response)
     const filename = `${data.name.toLowerCase().split('').join()}.json`;
@@ -37,4 +35,6 @@ inquirer
     fs.writeFile(filename, JSON.stringify(response, null, '/t'), (err) =>
     err ? console.log(err) : console.log("Success")
     );
+
+    
   });
