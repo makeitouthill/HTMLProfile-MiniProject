@@ -14,7 +14,7 @@ inquirer
     },
     {
       type: 'input',
-      message: 'What is your Github user name?',
+      message: 'What is your GitHub user name?',
       name: 'username',
     },
     {
@@ -36,5 +36,5 @@ inquirer
     err ? console.log(err) : console.log("Success")
     );
 
-    
+
   });
